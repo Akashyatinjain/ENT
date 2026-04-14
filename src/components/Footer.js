@@ -17,10 +17,10 @@ const Footer = () => {
               Building cleaner, smarter cities for a sustainable future.
             </p>
             <div className="footer-social">
-              <a href="#" className="social-icon">📘</a>
-              <a href="#" className="social-icon">🐦</a>
-              <a href="#" className="social-icon">📷</a>
-              <a href="#" className="social-icon">💼</a>
+              <a href="#home" className="social-icon">📘</a>
+              <a href="#home" className="social-icon">🐦</a>
+              <a href="#home" className="social-icon">📷</a>
+              <a href="#home" className="social-icon">💼</a>
             </div>
           </div>
 
@@ -40,9 +40,9 @@ const Footer = () => {
             <ul className="footer-links">
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Press Kit</a></li>
+              <li><a href="#home">Careers</a></li>
+              <li><a href="#home">Blog</a></li>
+              <li><a href="#home">Press Kit</a></li>
             </ul>
           </div>
 
@@ -72,11 +72,11 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; 2024 SmartWaste Collection System. All rights reserved.</p>
           <div className="footer-bottom-links">
-            <a href="#">Terms of Service</a>
+            <a href="#home">Terms of Service</a>
             <span className="separator">|</span>
-            <a href="#">Privacy Policy</a>
+            <a href="#home">Privacy Policy</a>
             <span className="separator">|</span>
-            <a href="#">Cookie Policy</a>
+            <a href="#home">Cookie Policy</a>
           </div>
         </div>
       </div>

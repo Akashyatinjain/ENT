@@ -36,23 +36,23 @@ const Contact = () => {
             <div className="info-card">
               <div className="info-icon">📍</div>
               <h3>Visit Us</h3>
-              <p>123 Green Street, Eco City<br />EC 12345, United States</p>
+              <p>St francis<br />Borivali West</p>
             </div>
             <div className="info-card">
               <div className="info-icon">📞</div>
               <h3>Call Us</h3>
-              <p>+1 (555) 123-4567<br />Mon-Fri, 9am-6pm EST</p>
+              <p>+91 79 7730 3911<br />Mon-Fri, 9am-6pm EST</p>
             </div>
             <div className="info-card">
               <div className="info-icon">✉️</div>
               <h3>Email Us</h3>
-              <p>info@smartwaste.com<br />support@smartwaste.com</p>
+              <p>veerScholar@gmail.com<br />devendra@smartwaste.com</p>
             </div>
             <div className="social-links">
-              <a href="#" className="social-link">📘</a>
-              <a href="#" className="social-link">🐦</a>
-              <a href="#" className="social-link">📷</a>
-              <a href="#" className="social-link">💼</a>
+              <a href="#features" className="social-link">📘</a>
+              <a href="#features" className="social-link">🐦</a>
+              <a href="#features" className="social-link">📷</a>
+              <a href="#features" className="social-link">💼</a>
             </div>
           </div>
 
