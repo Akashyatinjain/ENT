@@ -1,0 +1,118 @@
+.benefits {
+  padding: 100px 0;
+  background: var(--light-color);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.benefit-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-header {
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.benefit-category {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.benefit-list {
+  list-style: none;
+  padding: 30px;
+  margin: 0;
+}
+
+.benefit-item {
+  padding: 12px 0;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.benefit-item:last-child {
+  border-bottom: none;
+}
+
+.check-icon {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.comparison-section {
+  margin-top: 60px;
+}
+
+.comparison-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--dark-color);
+}
+
+.comparison-table {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 15px 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.comparison-row.header {
+  background: var(--dark-color);
+  color: white;
+  font-weight: 600;
+}
+
+.comparison-row:last-child {
+  border-bottom: none;
+}
+
+.positive {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.negative {
+  color: var(--danger-color);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .comparison-row {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
