@@ -8,7 +8,33 @@ const BinLocator = () => {
   const [searchRadius, setSearchRadius] = useState(5);
   const [loading, setLoading] = useState(true);
 
- useEffect(() => {
+// ✅ FIRST define function
+const generateNearbyBins = useCallback((lat, lng) => {
+  const binTypes = ['General Waste', 'Recycling', 'Organic', 'E-Waste', 'Hazardous'];
+  const locations = [];
+
+  for (let i = 0; i < 15; i++) {
+    const distance = Math.random() * searchRadius;
+
+    locations.push({
+      id: i + 1,
+      type: binTypes[Math.floor(Math.random() * binTypes.length)],
+      distance: distance.toFixed(2),
+      fillLevel: Math.floor(Math.random() * 100),
+      address: `${Math.floor(Math.random() * 999)} Main Street`,
+      status: Math.random() > 0.3 ? 'Operational' : 'Full',
+      lastEmptied: new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toLocaleDateString(),
+      lat: lat + (Math.random() - 0.5) * 0.05,
+      lng: lng + (Math.random() - 0.5) * 0.05
+    });
+  }
+
+  setNearbyBins(locations.sort((a, b) => a.distance - b.distance));
+}, [searchRadius]);
+
+
+// ✅ THEN useEffect
+useEffect(() => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -31,28 +57,6 @@ const BinLocator = () => {
   }
 }, [generateNearbyBins]);
 
-const generateNearbyBins = useCallback((lat, lng) => {
-  const binTypes = ['General Waste', 'Recycling', 'Organic', 'E-Waste', 'Hazardous'];
-  const locations = [];
-
-  for (let i = 0; i < 15; i++) {
-    const distance = Math.random() * searchRadius;
-
-    locations.push({
-      id: i + 1,
-      type: binTypes[Math.floor(Math.random() * binTypes.length)],
-      distance: distance.toFixed(2),
-      fillLevel: Math.floor(Math.random() * 100),
-      address: `${Math.floor(Math.random() * 999)} Main Street`,
-      status: Math.random() > 0.3 ? 'Operational' : 'Full',
-      lastEmptied: new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toLocaleDateString(),
-      lat: lat + (Math.random() - 0.5) * 0.05,
-      lng: lng + (Math.random() - 0.5) * 0.05
-    });
-  }
-
-  setNearbyBins(locations.sort((a, b) => a.distance - b.distance));
-}, [searchRadius]); 
 
 const handleRadiusChange = (e) => {
   const newRadius = parseInt(e.target.value);
