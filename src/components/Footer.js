@@ -17,10 +17,10 @@ const Footer = () => {
               Building cleaner, smarter cities for a sustainable future.
             </p>
             <div className="footer-social">
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="social-icon">📘</a>
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="social-icon">🐦</a>
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="social-icon">📷</a>
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="social-icon">💼</a>
+              <a href="www.linkedin.com/in/akash-yatin-jain" className="social-icon">📘</a>
+              <a href="www.linkedin.com/in/akash-yatin-jain" className="social-icon">🐦</a>
+              <a href="www.linkedin.com/in/akash-yatin-jain" className="social-icon">📷</a>
+              <a href="www.linkedin.com/in/akash-yatin-jain" className="social-icon">💼</a>
             </div>
           </div>
 
@@ -40,9 +40,9 @@ const Footer = () => {
             <ul className="footer-links">
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-              <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Careers</a></li>
-              <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Blog</a></li>
-              <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Press Kit</a></li>
+              <li><a href="www.linkedin.com/in/akash-yatin-jain">Careers</a></li>
+              <li><a href="www.linkedin.com/in/akash-yatin-jain">Blog</a></li>
+              <li><a href="www.linkedin.com/in/akash-yatin-jain">Press Kit</a></li>
             </ul>
           </div>
 
@@ -72,11 +72,11 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; 2024 SmartWaste Collection System. All rights reserved.</p>
           <div className="footer-bottom-links">
-            <a href="https://google.com" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+            <a href="www.linkedin.com/in/akash-yatin-jain">Terms of Service</a>
             <span className="separator">|</span>
-            <a href="https://google.com" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            <a href="www.linkedin.com/in/akash-yatin-jain">Privacy Policy</a>
             <span className="separator">|</span>
-            <a href="https://google.com" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+            <a href="www.linkedin.com/in/akash-yatin-jain">Cookie Policy</a>
           </div>
         </div>
       </div>

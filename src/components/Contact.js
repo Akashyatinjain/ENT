@@ -49,10 +49,10 @@ const Contact = () => {
               <p>veerScholar@gmail.com<br />devendra@smartwaste.com</p>
             </div>
             <div className="social-links">
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="social-link">📘</a>
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="social-link">🐦</a>
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer"className="social-link">📷</a>
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer"className="social-link">💼</a>
+              <a  href="www.linkedin.com/in/akash-yatin-jain">📘</a>
+              <a  href="www.linkedin.com/in/akash-yatin-jain">🐦</a>
+              <a  href="www.linkedin.com/in/akash-yatin-jain">📷</a>
+              <a  href="www.linkedin.com/in/akash-yatin-jain">💼</a>
             </div>
           </div>
 
