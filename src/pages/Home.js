@@ -75,7 +75,7 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-image">
-            <img src="https://via.placeholder.com/500x500/2ecc71/ffffff?text=Smart+Waste+System" alt="Smart Waste" />
+            <img src="https://media.licdn.com/dms/image/v2/C5112AQHfbj9Uve3J2Q/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1533013630729?e=2147483647&v=beta&t=Rn_zLwVbe__q-R-e_oiEIFszNSIqR8180vEdWlEnITk" alt="Smart Waste" />
           </div>
         </div>
       </section>
